@@ -1,11 +1,13 @@
-package Pack1;
+package pack5;
+public class File2 
+{
+	public static void main(String[] args) 
+	{
+		Integer a=new Integer (3);
+		int i=a.intValue();
+		int j=a;
+		System.out.println("a="+a+"i="+i+"j="+j);
 
-public class File2 {
-	public static void main (String[]args){ 
-		int a=10;
-		int b=20;
-		int c=a+b;
-		System.out.println("sum="+c);
 	}
 
 }
