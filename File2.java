@@ -1,12 +1,27 @@
-package pack5;
-public class File2 
-{
-	public static void main(String[] args) 
+package Prgs9;
+import java.io.*;
+public class File2 {
+	public static void main(String[] args)
+	throws Exception
 	{
-		Integer a=new Integer (3);
-		int i=a.intValue();
-		int j=a;
-		System.out.println("a="+a+"i="+i+"j="+j);
+		int c=0;// TODO Auto-generated method stub
+		File f=new File ("e:\\");
+		String [] s=f.list();
+		for (String s1: s)
+		{
+			File f1=new File(f,s1);
+			if (f1.isFile())
+			{
+			System.out.println(s1);
+			c++;
+		}
+			}
+System.out.println("total="+c);
+	}
+
+
+	{
+		
 
 	}
 

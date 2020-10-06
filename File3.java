@@ -1,15 +1,16 @@
-package Pack1;
-
+package Prgs9;
+import java.io.*;
 public class File3 {
-	public static void main(String[]args)
+
+	public static void main(String[] args)
+	throws Exception
 	{
-		String name="suresh";
-		String hno="13/6";
-		String city="surampalem";
-		System.out.println("name="+name);
-		System.out.println("hno="+hno);
-		System.out.println("city="+city);
-		
+		FileWriter fw=new FileWriter("d:\\abc.txt",true);// TODO Auto-generated method stub
+        fw.write("Aditya");
+        fw.write("Colleges");
+        fw.flush();
+        fw.close();
+        System.out.println("Done");
 	}
 
 }
